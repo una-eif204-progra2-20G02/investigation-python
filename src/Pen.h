@@ -2,14 +2,14 @@
 // Created by diana on 11/10/2020.
 //
 
-#ifndef INVESTIGATION_PYTHON_MOUSE_H
-#define INVESTIGATION_PYTHON_MOUSE_H
+#ifndef INVESTIGATION_PYTHON_PEN_H
+#define INVESTIGATION_PYTHON_PEN_H
 
 #include"BaseObject.h"
 
-class Mouse : public BaseObject {
+class Pen : public BaseObject {
 public:
-    explicit Mouse(string name);
+    explicit Pen(string name);
 
     void setName(string name) override;
 
@@ -19,7 +19,7 @@ public:
 
     string doSomething() override;
 
-    ~Mouse() override = default;
+    ~Pen() override = default;
 };
 
-#endif //INVESTIGATION_PYTHON_MOUSE_H
+#endif //INVESTIGATION_PYTHON_PEN_H

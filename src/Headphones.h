@@ -11,6 +11,10 @@ class Headphones : public BaseObject {
 public:
     explicit Headphones(string name);
 
+    void setName(string name) override;
+
+    string getName() override;
+
     string toString() override;
 
     string doSomething() override;

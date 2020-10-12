@@ -8,6 +8,14 @@ Headphones::Headphones(string name) : BaseObject(std::move(name)) {
 
 }
 
+void Headphones::setName(string name) {
+    BaseObject::setName(name);
+}
+
+string Headphones::getName() {
+    return BaseObject::getName();
+}
+
 string Headphones::toString() {
     stringstream output;
     output << BaseObject::toString() << endl;
@@ -15,7 +23,9 @@ string Headphones::toString() {
 }
 
 string Headphones::doSomething() {
-    return "I do something too";
+    return BaseObject::doSomething();
 }
+
+
 
 

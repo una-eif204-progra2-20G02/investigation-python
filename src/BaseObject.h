@@ -5,23 +5,30 @@
 #ifndef INVESTIGATION_PYTHON_BASEOBJECT_H
 #define INVESTIGATION_PYTHON_BASEOBJECT_H
 
-#include"IBaseObject.h"
+#include <iostream>
+#include<sstream>
 
-class BaseObject : public IBaseObject {
-private:
+using namespace std;
+
+class BaseObject {
+protected:
     string name;
 public:
-    BaseObject();
+    BaseObject() = default;
 
     explicit BaseObject(string name);
 
-    virtual void setName(string name);
+    virtual void setName(string name) = 0;
 
-    virtual string getName();
+    virtual void addObject(const BaseObject* baseObject) { }
 
-    string toString() override;
+    virtual void deleteObject() { }
 
-    string doSomething() override;
+    virtual string getName() = 0;
+
+    virtual string toString() = 0;
+
+    virtual string doSomething() = 0;
 
     virtual ~BaseObject() = default;
 };

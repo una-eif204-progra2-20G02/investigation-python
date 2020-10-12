@@ -4,10 +4,6 @@
 
 #include "BaseObject.h"
 
-BaseObject::BaseObject() {
-    name = "";
-}
-
 BaseObject::BaseObject(string name) {
     this->name = name;
 }
@@ -22,7 +18,7 @@ string BaseObject::getName() {
 
 string BaseObject::toString() {
     stringstream output;
-    output << "It is a " << name << endl;
+    output << "- " << name << endl;
     return output.str();
 }
 

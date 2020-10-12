@@ -8,15 +8,25 @@ Mouse::Mouse(string name) : BaseObject(std::move(name)) {
 
 }
 
+string Mouse::getName() {
+    return BaseObject::getName();
+}
+
+void Mouse::setName(string name) {
+    BaseObject::setName(name);
+}
+
 string Mouse::toString() {
     stringstream output;
-    output << "Mouse" << endl;
+    output << BaseObject::toString() << endl;
     return output.str();
 }
 
 string Mouse::doSomething() {
-    return "I do ssomething too";
+    return BaseObject::toString();
 }
+
+
 
 
 
