@@ -4,14 +4,18 @@
 
 #ifndef INVESTIGATION_PYTHON_MOUSE_H
 #define INVESTIGATION_PYTHON_MOUSE_H
-#include"IBaseObject.h"
 
-class Mouse : public IBaseObject
-{
+#include"BaseObject.h"
+
+class Mouse : public BaseObject {
 public:
-    Mouse() = default;
+    explicit Mouse(string name);
+
     string toString() override;
+
     string doSomething() override;
-    virtual ~Mouse() = default;
+
+    ~Mouse() override = default;
 };
+
 #endif //INVESTIGATION_PYTHON_MOUSE_H

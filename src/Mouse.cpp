@@ -4,6 +4,10 @@
 
 #include "Mouse.h"
 
+Mouse::Mouse(string name) : BaseObject(std::move(name)) {
+
+}
+
 string Mouse::toString() {
     stringstream output;
     output << "Mouse" << endl;
@@ -13,4 +17,6 @@ string Mouse::toString() {
 string Mouse::doSomething() {
     return "I do ssomething too";
 }
+
+
 

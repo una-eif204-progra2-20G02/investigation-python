@@ -4,14 +4,18 @@
 
 #ifndef INVESTIGATION_PYTHON_HEADPHONES_H
 #define INVESTIGATION_PYTHON_HEADPHONES_H
-#include"IBaseObject.h"
 
-class Headphones : public IBaseObject
-{
+#include"BaseObject.h"
+
+class Headphones : public BaseObject {
 public:
-    Headphones() = default;
+    explicit Headphones(string name);
+
     string toString() override;
+
     string doSomething() override;
-    virtual ~Headphones() = default;
+
+    ~Headphones() override = default;
 };
+
 #endif //INVESTIGATION_PYTHON_HEADPHONES_H

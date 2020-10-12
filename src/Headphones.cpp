@@ -4,13 +4,18 @@
 
 #include "Headphones.h"
 
+Headphones::Headphones(string name) : BaseObject(std::move(name)) {
+
+}
+
 string Headphones::toString() {
     stringstream output;
-    output << "Headphones" << endl;
+    output << BaseObject::toString() << endl;
     return output.str();
 }
 
 string Headphones::doSomething() {
     return "I do something too";
 }
+
 
