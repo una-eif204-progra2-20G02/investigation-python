@@ -20,9 +20,9 @@ public:
 
     virtual void setName(string name) = 0;
 
-    virtual void addObject(const BaseObject* baseObject) { }
+    virtual void addObject(const BaseObject *baseObject) {}
 
-    virtual void deleteObject() { }
+    virtual void deleteObject() {}
 
     virtual string getName() = 0;
 

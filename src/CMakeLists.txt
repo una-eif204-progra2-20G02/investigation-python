@@ -7,4 +7,4 @@ set(SOURCES ${SOURCES})
 
 add_executable(${BINARY}_run ${SOURCES})
 
-add_library(${BINARY}_lib STATIC ${SOURCES} Headphones.h Headphones.cpp Mouse.h Mouse.cpp BaseObject.h BaseObject.cpp BoxOfObjects.h BoxOfObjects.cpp Pen.h Pen.cpp Scissors.h Scissors.cpp)
+add_library(${BINARY}_lib STATIC ${SOURCES} Headphones.h Headphones.cpp Mouse.h Mouse.cpp BaseObject.h BaseObject.cpp BoxOfObjects.h BoxOfObjects.cpp Pen.h Pen.cpp Scissors.h Scissors.cpp IRealDuck.h IToyDuck.h RealDuck.h ToyDuck.h BirdAdapter.h RealDuck.cpp ToyDuck.cpp BirdAdapter.cpp)
